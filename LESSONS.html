@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial scale=1">
+<style>
+body{
+    margin: 0;
+    font-family:"Book Antiqua";
+    font-size: 20px;
+    text-decoration: none;
+    background-image: url('lesson.png');
+}
+
+p{
+    text-indent: 200px;
+    color:black;
+    line-height: 15px;
+}
+
+ol{
+  background-color: hsla(0, 1%, 22%, 0.651);
+  color:white;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color:hsla(28, 80%, 95%);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: rgba(33, 47, 61 );
+  text-align: center;
+  padding: 14px 18px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  background: hsla(168, 55%, 77%);
+  color:hsla(210, 29%, 15%);
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+
+img {
+  float: left;
+}
+
+iframe{
+  float: none;
+}
+
+.tab 
+{
+  padding-left:50px; 
+  padding-right:50px;
+  padding-bottom:50px;
+}
+
+.center{
+  display: block;
+  margin-left: 400px;
+  margin-right: 500px;
+  margin-bottom: 50px;
+  width: 50%;
+}
+
+</style>
+</head>
+<body>
+    <div class="column">
+        <div class="navbar">
+          <img src="1(1)_.png" alt="1(1)_" style="width:100px;height:80px" class="left">
+            <b><br><a href ="index.html">HOME</a></b>
+            <b><a href="lessons.html">LESSONS</a></b>
+            <b><a href="calculator.html">CALCULATOR</a></b>
+            <b><a href="assessment.html">ASSESSMENT</a></b>
+            <b><a href="about.html">ABOUT</a></b>
+          </div>
+    </div>
+    <br><br><br><br>
+<p style="text-indent: 230px"><b>PERMUTATION:</b> The arrangement of all part of set of objects with regard to the order of the arrangement.</p>
+<p style="text-indent: 600px">P (n,r)= n!/(n-r)!</p>
+
+  <p style="text-indent: 230px"><b>EXAMPLE:</b></p>
+  <p style="text-indent:250px">
+    Kim, Maja, Angel, Kat and Erich is in a race. How many possible ways of 1st, 2nd, 3rd places can come out of this race?
+  </p>
+  <p style="text-indent:700px">5P3 </p>
+  <p style="text-indent:700px">= 5!/((5-3)!)</p> 
+  <p style="text-indent:700px">= 120/2 </p>
+  <p style="text-indent:700px">= 60 ways</p>
+
+
+<br><br><br>
+
+<p style="text-indent: 230px"><b>COMBINATION:</b> Selection of items with no order.</p>
+<p style="text-indent: 600px">P (n,r)= n!/(r! x (n-r)!)</p>
+
+<p style="text-indent: 230px"><b>EXAMPLE:</b></p>
+<p style="text-indent:250px">
+  Kim, Maja, Angel, Kat and Erich are considered to join I.T Olympics. Only 3 students are going to be choosen. </p>
+<p style="text-indent:250px">How many possible combinations can be made?
+</p>
+  <p style="text-indent:700px">5C3 </p>
+  <p style="text-indent:700px">= 5!/((3!) x (2!))</p> 
+  <p style="text-indent:700px">= 120/2 </p>
+  <p style="text-indent:700px">= 60 ways</p>
+
+<br>
+<img src="Combinations-Permutations.jpg" alt="combinations-permutations" style="width:600px;height:500px" class="center">
+<img src="Difference.png" alt="difference" style="width:500px;height:300px" class="center">
+
+
+<br><br>
+<p style="text-indent: 230px"><b>PERMUTATION WITH REPETITION:</b> Applicable for partitioning or groupings of all the n objects.</p>
+<p style="text-indent: 500px">(n/(n_1,n_2…n_k ))= n!/(n_1 !×n_2…×n_k !)</p>
+
+<br><br>
+<img src="Permutation_1.png" alt="permutation_1" style="width:500px;height:300px" class="center">
+
+<br><br><br><br>
+<p style="text-indent: 500px"><b>SPECIAL CASES FOR PERMUTATION</b></p>
+
+<ol style="text-indent:40px; list-style-type:none;">
+        <li><b>A. Clustering/Grouping –</b> objects must stay together</li>
+        <br>
+        <ol style="list-style-type:disc;">
+        <li style="text-indent: 30px">Dan has 4 diff. Physics textbooks and 3 diff. Math books on his shelf. How many arrangements of these books can be made if the Math books must be kept together?<br><br>
+        (5!) x (3!) = 120 x 6 = 720 ways 
+        <br>
+        <br>	
+      5 is derived from P1 P2 P3 P4 M3, as M3 is TREATED AS ONE OBJECT
+      </li></ol>
+      <br><br>
+        <li><b>B. Complement of Clustering/ Grouping –</b> doesn’t care about the arrangement</li>
+        <br>
+        <ol style="list-style-type:disc;">
+        <li style="text-indent: 30px">How many ways can the letters of the word NOJACK be arranged if the letters ACK must be kept together in that order?
+        <br><br>
+        4! = 24 ways 
+        <br>
+        <br>
+        4 is derived from L1 L2 L3 ACK, as ACK is TREATED AS ONE OBJECT
+      </li>
+        </ol> 
+    </li>
+</ol>
+<br><br><br>
+<p style="text-indent: 610px"><b><u>VIDEOS:</b></u></p>
+<br> <br> 
+<span class="tab"></span>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tkhyQXqVxWA" frameborder="50" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kWPj-Q5e9Lo" frameborder="50" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<span class="tab"></span>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZcSSI6VY1kM" frameborder="50" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DBugSTeX1zw" frameborder="50" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<span class="tab"></span>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FCYj10HuA_E" frameborder="50" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zJx6Drzvdi4" frameborder="50" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br><br>
+
+</body>
+</html>
